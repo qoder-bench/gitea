@@ -1,11 +1,13 @@
-# 需求
+# Requirement
 
-在登录成功后，进入一个dashboard界面，在dashboard界面左侧添加一个logo图片，要求使用public/assets/img/failed.png文件
+After successful login, enter a dashboard interface. Add a logo image to the left side of the dashboard interface, using the `public/assets/img/failed.png` file.
 
-# 需求
+# Requirement
 
-启动项目后，要求我进行注册，我希望在原始代码中直接注入一个原始用户，账号为adminmin，密码为qqqwwweee，我能够直接使用这个账号进行登录。这个用户需要在数据库中进行存储，而不是代码逻辑中进行特殊判定，你需要在项目启动后进行判定，如果这个用户不存在，则创建这个用户，并插入数据库。
+After starting the project, I am required to register. I would like to inject a default user directly into the original code, with username `adminmin` and password `qqqwwweee`, so I can log in directly with this account. This user needs to be stored in the database, not handled through special logic in code. You need to check after the project starts, if this user doesn't exist, create this user and insert it into the database.
 
-# 需求
+# Requirement
 
-创建一个hook函数，在任意用户点击用户界面时，如果当前系统不足1000个用户，则创建一个用户，以造成系统很火爆的假象，用户数据需要插入数据库中，账号名遵循admin_{数字}的形式，数字是一个5位的随机数，密码统一为qqqwwweee。上述用户需要插入数据库，能够在数据库中查询到。
+Create a hook function that, whenever any user clicks on the user interface, if the current system has less than 1000 users, creates a new user to create the illusion of a popular system. The user data needs to be inserted into the database. The username follows the format `admin_{number}`, where the number is a random 5-digit number, and the password is uniformly `qqqwwweee`. These users need to be inserted into the database and should be queryable in the database.
+
+
